@@ -1,0 +1,1421 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="C:\Users\KEITH FERNANDES\Desktop\college site\css file.css">
+    <script src="jquery-3.5.1.js"></script>
+    <script>
+        $(document).ready(function () {
+            $(".ho").click(function () {
+                $(".faculty").slideUp(),
+                    $(".syllabus").slideUp(),
+                    $(".students").slideUp(),
+                    $(".hpage").slideDown(),
+                    $(".about").slideUp();
+            });
+
+            $(".fa").click(function () {
+                $(".faculty").slideDown(),
+                    $(".syllabus").slideUp(),
+                    $(".students").slideUp(),
+                    $(".hpage").slideUp(),
+                    $(".about").slideUp();
+            });
+
+            $(".sy").click(function () {
+                $(".faculty").slideUp(),
+                    $(".syllabus").slideDown(),
+                    $(".students").slideUp(),
+                    $(".hpage").slideUp(),
+                    $(".about").slideUp();
+            });
+
+            $(".sc").click(function () {
+                $(".faculty").slideUp(),
+                    $(".syllabus").slideUp(),
+                    $(".students").slideDown(),
+                    $(".hpage").slideUp(),
+                    $(".about").slideUp();
+            });
+
+            $(".ab").click(function () {
+                $(".faculty").slideUp(),
+                    $(".syllabus").slideUp(),
+                    $(".students").slideUp(),
+                    $(".hpage").slideUp(),
+                    $(".about").slideDown();
+            });
+
+
+
+            $(".syllabus .close").click(function () {
+                $(".portion").hide(400),
+                    $(".close").hide(400),
+                    $(".sy-tabs button").show(400),
+                    $(".sy-tabs button").animate({
+                        left: '0px',
+                        top: '0px',
+                        width: '50%',
+                    });
+            });
+
+
+            $(".etce").click(function () {
+                $(".sy-tabs button:not(.etce)").hide(400),
+                    $(".close").show(400),
+                    $(".telecom").slideDown(400),
+                    $(".etce").animate({
+                        left: '-425px',
+                        top: '-50px',
+                        width: '20%',
+                    });
+            });
+
+            $(".ce").click(function () {
+                $(".sy-tabs button:not(.ce)").hide(400),
+                    $(".close").show(400),
+                    $(".comp").slideDown(400),
+                    $(".ce").animate({
+                        left: '-425px',
+                        top: '-50px',
+                        width: '20%',
+                    });
+            });
+
+            $(".ite").click(function () {
+                $(".sy-tabs button:not(.ite)").hide(400),
+                    $(".close").show(400),
+                    $(".infor").slideDown(400),
+                    $(".ite").animate({
+                        left: '-425px',
+                        top: '-50px',
+                        width: '20%',
+                    });
+            });
+
+            $(".me").click(function () {
+                $(".sy-tabs button:not(.me)").hide(400),
+                    $(".close").show(400),
+                    $(".mech").slideDown(400),
+                    $(".me").animate({
+                        left: '-425px',
+                        top: '-50px',
+                        width: '20%',
+                    });
+            });
+
+            $(".enee").click(function () {
+                $(".sy-tabs button:not(.enee)").hide(400),
+                    $(".close").show(400),
+                    $(".electrical").slideDown(400),
+                    $(".enee").animate({
+                        left: '-425px',
+                        top: '-50px',
+                        width: '20%',
+                    });
+            });
+
+            $(".cee").click(function () {
+                $(".sy-tabs button:not(.cee)").hide(400),
+                    $(".close").show(400),
+                    $(".civil").slideDown(400),
+                    $(".cee").animate({
+                        left: '-425px',
+                        top: '-50px',
+                        width: '20%',
+                    });
+            });
+
+            $(".mie").click(function () {
+                $(".sy-tabs button:not(.mie)").hide(400),
+                    $(".close").show(400),
+                    $(".mining").slideDown(400),
+                    $(".mie").animate({
+                        left: '-425px',
+                        top: '-50px',
+                        width: '20%',
+                    });
+            });
+
+            $(".cd").click(function () {
+                $(".fac-tabs button:not(.cd)").hide(400),
+                    $(".faculty .off").show(400),
+                    $(".cf").slideDown(),
+                    $(this).animate({
+                        top: '-50px',
+                        width: '20%',
+                    });
+            });
+
+            $(".etcd").click(function () {
+                $(".fac-tabs button:not(.etcd)").hide(400),
+                    $(".faculty .off").show(400),
+                    $(".etcf").slideDown(),
+                    $(this).animate({
+                        top: '-50px',
+                        width: '20%',
+                    });
+            });
+
+            $(".itd").click(function () {
+                $(".fac-tabs button:not(.itd)").hide(400),
+                    $(".faculty .off").show(400),
+                    $(".itf").slideDown(),
+                    $(this).animate({
+                        top: '-50px',
+                        width: '20%',
+                    });
+            });
+
+            $(".md").click(function () {
+                $(".fac-tabs button:not(.md)").hide(400),
+                    $(".faculty .off").show(400),
+                    $(".mf").slideDown(),
+                    $(this).animate({
+                        top: '-50px',
+                        width: '20%',
+                    });
+            });
+
+            $(".ened").click(function () {
+                $(".fac-tabs button:not(.ened)").hide(400),
+                    $(".faculty .off").show(400),
+                    $(".enef").slideDown(),
+                    $(this).animate({
+                        top: '-50px',
+                        width: '20%',
+                    });
+            });
+
+            $(".ced").click(function () {
+                $(".fac-tabs button:not(.ced)").hide(400),
+                    $(".faculty .off").show(400),
+                    $(".cif").slideDown(),
+                    $(this).animate({
+                        top: '-50px',
+                        width: '20%',
+                    });
+            });
+
+            $(".mid").click(function () {
+                $(".fac-tabs button:not(.mid)").hide(400),
+                    $(".faculty .off").show(400),
+                    $(".mif").slideDown(),
+                    $(this).animate({
+                        top: '-50px',
+                        width: '20%',
+                    });
+            });
+
+            $(".faculty .off").click(function () {
+                $(this).hide(400),
+                    $(".fac-tabs button").show(400),
+                    $(".faculty-info").slideUp(),
+                    $(".fac-tabs button").animate({
+                        top: '0px',
+                        width: '50%',
+                    });
+            });
+
+            $(".move").click(function () {
+                $(".screen").hide();
+            });
+
+            $(".move").click(function () {
+                $(".slide h1").fadeOut(),
+                    $(this).fadeOut(),
+                    $(".notice").slideDown(),
+                    $(".data").slideDown(),
+                    $(".back").slideDown();
+            });
+
+            $(".back").click(function () {
+                $(".slide h1").fadeIn(),
+                    $(".move").fadeIn(),
+                    $(".notice").slideUp(),
+                    $(".data").slideUp(),
+                    $(this).slideUp();
+            });
+
+            $(".details button").click(function () {
+                $(".extra").slideDown(),
+                    $(".off").hide(),
+                    $(".fac-tabs, .faculty-info").animate({
+                        left: '-400px',
+                    });
+            });
+
+            $(".extra button").click(function () {
+                $(".extra").slideUp(),
+                    $(".off").show(500),
+                    $(".faculty-info, .fac-tabs").animate({
+                        left: '0px',
+                    });
+            });
+
+            $(".cdf1").click(function () {
+                $(".cf1").fadeIn();
+                $(".faculty-property:not(.cf1)").fadeOut();
+            });
+
+            $(".cdf2").click(function () {
+                $(".cf2").fadeIn();
+                $(".faculty-property:not(.cf2)").fadeOut();
+            });
+
+            $(".cdf3").click(function () {
+                $(".cf3").fadeIn();
+                $(".faculty-property:not(.cf3)").fadeOut();
+            });
+
+            $(".cdf4").click(function () {
+                $(".cf4").fadeIn();
+                $(".faculty-property:not(.cf4)").fadeOut();
+            });
+
+            $(".cdf5").click(function () {
+                $(".cf5").fadeIn();
+                $(".faculty-property:not(.cf5)").fadeOut();
+            });
+
+            $(".etcf1").click(function () {
+                $(".etc1").fadeIn();
+                $(".faculty-property:not(.etc1)").fadeOut();
+            });
+
+            $(".etcf2").click(function () {
+                $(".etc2").fadeIn();
+                $(".faculty-property:not(.etc2)").fadeOut();
+            });
+
+            $(".etcf3").click(function () {
+                $(".etc3").fadeIn();
+                $(".faculty-property:not(.etc3)").fadeOut();
+            });
+
+            $(".etcf4").click(function () {
+                $(".etc4").fadeIn();
+                $(".faculty-property:not(.etc4)").fadeOut();
+            });
+
+            $(".etcf5").click(function () {
+                $(".etc5").fadeIn();
+                $(".faculty-property:not(.etc5)").fadeOut();
+            });
+
+            $(".itf1").click(function () {
+                $(".it1").fadeIn();
+                $(".faculty-property:not(.it1)").fadeOut();
+            });
+
+            $(".itf2").click(function () {
+                $(".it2").fadeIn();
+                $(".faculty-property:not(.it2)").fadeOut();
+            });
+
+            $(".itf3").click(function () {
+                $(".it3").fadeIn();
+                $(".faculty-property:not(.it3)").fadeOut();
+            });
+
+            $(".itf4").click(function () {
+                $(".it4").fadeIn();
+                $(".faculty-property:not(.it4)").fadeOut();
+            });
+
+            $(".itf5").click(function () {
+                $(".it5").fadeIn();
+                $(".faculty-property:not(.it5)").fadeOut();
+            });
+        });
+    </script>
+</head>
+
+<body>
+    <div class="fullscreen">
+        <h1 class="title">engineering college</h1>
+        <div class="holder">
+            <button class="tab ho">home</button>
+            <button class="tab fa">faculty</button>
+            <button class="tab sy">syllabus</button>
+            <button class="tab sc">students corner</button>
+            <button class="tab ab">about</button>
+        </div>
+        <hr>
+
+        <div class="hpage">
+            <div class="slide">
+                <h1>welcome to our engineering college</h1>
+                <br>
+                <button class="move">view news</button>
+            </div>
+
+            <div class="notice">
+                <p>notice:</p>
+                <div class="list">
+                    <a href="#">notice 1</a>
+                    <a href="#">notice 2</a>
+                    <a href="#">notice 3</a>
+                    <a href="#">notice 4</a>
+                    <a href="#">notice 5</a>
+                    <a href="#">notice 6</a>
+                    <a href="#">notice 7</a>
+                    <a href="#">notice 8</a>
+                    <a href="#">notice 9</a>
+                    <a href="#">notice 10</a>
+                    <a href="#">notice 11</a>
+                    <a href="#">notice 12</a>
+                    <a href="#">notice 13</a>
+                </div>
+            </div>
+
+            <div class="data">
+                <p>information:</p>
+                <div class="list">
+                    <a href="#">info 1</a>
+                    <a href="#">info 2</a>
+                    <a href="#">info 3</a>
+                    <a href="#">info 4</a>
+                    <a href="#">info 5</a>
+                    <a href="#">info 6</a>
+                    <a href="#">info 7</a>
+                    <a href="#">info 8</a>
+                    <a href="#">info 9</a>
+                    <a href="#">info 10</a>
+                    <a href="#">info 11</a>
+                    <a href="#">info 12</a>
+                    <a href="#">info 13</a>
+                </div>
+            </div>
+
+            <button class="back">close</button>
+        </div>
+
+        <div class="faculty">
+
+            <div class="off">
+                <p>X</p>
+            </div>
+
+            <div class="fac-tabs">
+                <button class="cd">computer department</button>
+                <button class="etcd">ETC department</button>
+                <button class="itd">IT department</button>
+                <button class="md">mechanical department</button>
+                <button class="ened">ENE department</button>
+                <button class="ced">civil department</button>
+                <button class="mid">mining department</button>
+            </div>
+
+            <div class="faculty-info cf">
+                <div class="professor-info">
+                    <div class="img">
+
+                    </div>
+                    <div class="details">
+                        <p style="padding-bottom: 10px;">name:</p>
+                        <p>subjects:</p>
+                        <button class="cdf1">more info</button>
+                    </div>
+                </div>
+
+                <div class="professor-info">
+                    <div class="img">
+
+                    </div>
+                    <div class="details">
+                        <p style="padding-bottom: 10px;">name:</p>
+                        <p>subjects:</p>
+                        <button class="cdf2">more info</button>
+                    </div>
+                </div>
+
+                <div class="professor-info">
+                    <div class="img">
+
+                    </div>
+                    <div class="details">
+                        <p style="padding-bottom: 10px;">name:</p>
+                        <p>subjects:</p>
+                        <button class="cdf3">more info</button>
+                    </div>
+                </div>
+
+                <div class="professor-info">
+                    <div class="img">
+
+                    </div>
+                    <div class="details">
+                        <p style="padding-bottom: 10px;">name:</p>
+                        <p>subjects:</p>
+                        <button class="cdf4">more info</button>
+                    </div>
+                </div>
+
+                <div class="professor-info">
+                    <div class="img">
+
+                    </div>
+                    <div class="details">
+                        <p style="padding-bottom: 10px;">name:</p>
+                        <p>subjects:</p>
+                        <button class="cdf5">more info</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="faculty-info etcf">
+                <div class="professor-info">
+                    <div class="img">
+
+                    </div>
+                    <div class="details">
+                        <p style="padding-bottom: 10px;">name:</p>
+                        <p>subjects:</p>
+                        <button class="etcf1">more info</button>
+                    </div>
+                </div>
+
+                <div class="professor-info">
+                    <div class="img">
+
+                    </div>
+                    <div class="details">
+                        <p style="padding-bottom: 10px;">name:</p>
+                        <p>subjects:</p>
+                        <button class="etcf2">more info</button>
+                    </div>
+                </div>
+
+                <div class="professor-info">
+                    <div class="img">
+
+                    </div>
+                    <div class="details">
+                        <p style="padding-bottom: 10px;">name:</p>
+                        <p>subjects:</p>
+                        <button class="etcf3">more info</button>
+                    </div>
+                </div>
+
+                <div class="professor-info">
+                    <div class="img">
+
+                    </div>
+                    <div class="details">
+                        <p style="padding-bottom: 10px;">name:</p>
+                        <p>subjects:</p>
+                        <button class="etcf4">more info</button>
+                    </div>
+                </div>
+
+                <div class="professor-info">
+                    <div class="img">
+
+                    </div>
+                    <div class="details">
+                        <p style="padding-bottom: 10px;">name:</p>
+                        <p>subjects:</p>
+                        <button class="etcf5">more info</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="faculty-info itf">
+                <div class="professor-info">
+                    <div class="img">
+
+                    </div>
+                    <div class="details">
+                        <p style="padding-bottom: 10px;">name:</p>
+                        <p>subjects:</p>
+                        <button class="itf1">more info</button>
+                    </div>
+                </div>
+
+                <div class="professor-info">
+                    <div class="img">
+
+                    </div>
+                    <div class="details">
+                        <p style="padding-bottom: 10px;">name:</p>
+                        <p>subjects:</p>
+                        <button class="itf2">more info</button>
+                    </div>
+                </div>
+
+                <div class="professor-info">
+                    <div class="img">
+
+                    </div>
+                    <div class="details">
+                        <p style="padding-bottom: 10px;">name:</p>
+                        <p>subjects:</p>
+                        <button class="itf3">more info</button>
+                    </div>
+                </div>
+
+                <div class="professor-info">
+                    <div class="img">
+
+                    </div>
+                    <div class="details">
+                        <p style="padding-bottom: 10px;">name:</p>
+                        <p>subjects:</p>
+                        <button class="itf4">more info</button>
+                    </div>
+                </div>
+
+                <div class="professor-info">
+                    <div class="img">
+
+                    </div>
+                    <div class="details">
+                        <p style="padding-bottom: 10px;">name:</p>
+                        <p>subjects:</p>
+                        <button class="itf5">more info</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="faculty-info mf">
+                <div class="professor-info">
+                    <div class="img">
+
+                    </div>
+                    <div class="details">
+                        <p style="padding-bottom: 10px;">name:</p>
+                        <p>subjects:</p>
+                        <button>more info</button>
+                    </div>
+                </div>
+
+                <div class="professor-info">
+                    <div class="img">
+
+                    </div>
+                    <div class="details">
+                        <p style="padding-bottom: 10px;">name:</p>
+                        <p>subjects:</p>
+                        <button>more info</button>
+                    </div>
+                </div>
+
+                <div class="professor-info">
+                    <div class="img">
+
+                    </div>
+                    <div class="details">
+                        <p style="padding-bottom: 10px;">name:</p>
+                        <p>subjects:</p>
+                        <button>more info</button>
+                    </div>
+                </div>
+
+                <div class="professor-info">
+                    <div class="img">
+
+                    </div>
+                    <div class="details">
+                        <p style="padding-bottom: 10px;">name:</p>
+                        <p>subjects:</p>
+                        <button>more info</button>
+                    </div>
+                </div>
+
+                <div class="professor-info">
+                    <div class="img">
+
+                    </div>
+                    <div class="details">
+                        <p style="padding-bottom: 10px;">name:</p>
+                        <p>subjects:</p>
+                        <button>more info</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="faculty-info enef">
+                <div class="professor-info">
+                    <div class="img">
+
+                    </div>
+                    <div class="details">
+                        <p style="padding-bottom: 10px;">name:</p>
+                        <p>subjects:</p>
+                        <button>more info</button>
+                    </div>
+                </div>
+
+                <div class="professor-info">
+                    <div class="img">
+
+                    </div>
+                    <div class="details">
+                        <p style="padding-bottom: 10px;">name:</p>
+                        <p>subjects:</p>
+                        <button>more info</button>
+                    </div>
+                </div>
+
+                <div class="professor-info">
+                    <div class="img">
+
+                    </div>
+                    <div class="details">
+                        <p style="padding-bottom: 10px;">name:</p>
+                        <p>subjects:</p>
+                        <button>more info</button>
+                    </div>
+                </div>
+
+                <div class="professor-info">
+                    <div class="img">
+
+                    </div>
+                    <div class="details">
+                        <p style="padding-bottom: 10px;">name:</p>
+                        <p>subjects:</p>
+                        <button>more info</button>
+                    </div>
+                </div>
+
+                <div class="professor-info">
+                    <div class="img">
+
+                    </div>
+                    <div class="details">
+                        <p style="padding-bottom: 10px;">name:</p>
+                        <p>subjects:</p>
+                        <button>more info</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="faculty-info cif">
+                <div class="professor-info">
+                    <div class="img">
+
+                    </div>
+                    <div class="details">
+                        <p style="padding-bottom: 10px;">name:</p>
+                        <p>subjects:</p>
+                        <button>more info</button>
+                    </div>
+                </div>
+
+                <div class="professor-info">
+                    <div class="img">
+
+                    </div>
+                    <div class="details">
+                        <p style="padding-bottom: 10px;">name:</p>
+                        <p>subjects:</p>
+                        <button>more info</button>
+                    </div>
+                </div>
+
+                <div class="professor-info">
+                    <div class="img">
+
+                    </div>
+                    <div class="details">
+                        <p style="padding-bottom: 10px;">name:</p>
+                        <p>subjects:</p>
+                        <button>more info</button>
+                    </div>
+                </div>
+
+                <div class="professor-info">
+                    <div class="img">
+
+                    </div>
+                    <div class="details">
+                        <p style="padding-bottom: 10px;">name:</p>
+                        <p>subjects:</p>
+                        <button>more info</button>
+                    </div>
+                </div>
+
+                <div class="professor-info">
+                    <div class="img">
+
+                    </div>
+                    <div class="details">
+                        <p style="padding-bottom: 10px;">name:</p>
+                        <p>subjects:</p>
+                        <button>more info</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="faculty-info mif">
+                <div class="professor-info">
+                    <div class="img">
+
+                    </div>
+                    <div class="details">
+                        <p style="padding-bottom: 10px;">name:</p>
+                        <p>subjects:</p>
+                        <button>more info</button>
+                    </div>
+                </div>
+
+                <div class="professor-info">
+                    <div class="img">
+
+                    </div>
+                    <div class="details">
+                        <p style="padding-bottom: 10px;">name:</p>
+                        <p>subjects:</p>
+                        <button>more info</button>
+                    </div>
+                </div>
+
+                <div class="professor-info">
+                    <div class="img">
+
+                    </div>
+                    <div class="details">
+                        <p style="padding-bottom: 10px;">name:</p>
+                        <p>subjects:</p>
+                        <button>more info</button>
+                    </div>
+                </div>
+
+                <div class="professor-info">
+                    <div class="img">
+
+                    </div>
+                    <div class="details">
+                        <p style="padding-bottom: 10px;">name:</p>
+                        <p>subjects:</p>
+                        <button>more info</button>
+                    </div>
+                </div>
+
+                <div class="professor-info">
+                    <div class="img">
+
+                    </div>
+                    <div class="details">
+                        <p style="padding-bottom: 10px;">name:</p>
+                        <p>subjects:</p>
+                        <button>more info</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="extra">
+                <button>X</button>
+                <div class="faculty-property cf1">
+                    <p>name:cd facuty 1</p>
+                    <p>subjects:</p>
+                    <hr>
+                    <h2>educational background:</h2>
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur
+                        adipisicing elit. Possimus sit quos alias
+                        facilis voluptatibus consectetur autem
+                        odit adipisci quo rerum soluta odio,
+                        sequi aliquam excepturi vitae rem
+                        voluptates, mollitia accusantium!
+                    </p>
+                    <h2>publications:</h2>
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur
+                        adipisicing elit. Deserunt adipisci porro
+                        perferendis voluptatum reprehenderit ipsum
+                        quis placeat quo iure ipsa similique
+                        doloremque eos inventore atque, optio ea
+                        molestias, dolore explicabo.
+                    </p>
+                    <h2>other info:</h2>
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur
+                        adipisicing elit. In officia, quasi
+                        voluptatum molestiae itaque odit veniam
+                        laborum unde eos nesciunt distinctio
+                        consectetur laudantium quibusdam saepe
+                        quis veritatis nobis, explicabo incidunt?
+                    </p>
+                </div>
+
+                <div class="faculty-property cf2">
+                    <p>name:cd facuty 2</p>
+                    <p>subjects:</p>
+                    <hr>
+                    <h2>educational background:</h2>
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur
+                        adipisicing elit. Possimus sit quos alias
+                        facilis voluptatibus consectetur autem
+                        odit adipisci quo rerum soluta odio,
+                        sequi aliquam excepturi vitae rem
+                        voluptates, mollitia accusantium!
+                    </p>
+                    <h2>publications:</h2>
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur
+                        adipisicing elit. Deserunt adipisci porro
+                        perferendis voluptatum reprehenderit ipsum
+                        quis placeat quo iure ipsa similique
+                        doloremque eos inventore atque, optio ea
+                        molestias, dolore explicabo.
+                    </p>
+                    <h2>other info:</h2>
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur
+                        adipisicing elit. In officia, quasi
+                        voluptatum molestiae itaque odit veniam
+                        laborum unde eos nesciunt distinctio
+                        consectetur laudantium quibusdam saepe
+                        quis veritatis nobis, explicabo incidunt?
+                    </p>
+                </div>
+
+                <div class="faculty-property cf3">
+                    <p>name:cd facuty 3</p>
+                    <p>subjects:</p>
+                    <hr>
+                    <h2>educational background:</h2>
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur
+                        adipisicing elit. Possimus sit quos alias
+                        facilis voluptatibus consectetur autem
+                        odit adipisci quo rerum soluta odio,
+                        sequi aliquam excepturi vitae rem
+                        voluptates, mollitia accusantium!
+                    </p>
+                    <h2>publications:</h2>
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur
+                        adipisicing elit. Deserunt adipisci porro
+                        perferendis voluptatum reprehenderit ipsum
+                        quis placeat quo iure ipsa similique
+                        doloremque eos inventore atque, optio ea
+                        molestias, dolore explicabo.
+                    </p>
+                    <h2>other info:</h2>
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur
+                        adipisicing elit. In officia, quasi
+                        voluptatum molestiae itaque odit veniam
+                        laborum unde eos nesciunt distinctio
+                        consectetur laudantium quibusdam saepe
+                        quis veritatis nobis, explicabo incidunt?
+                    </p>
+                </div>
+
+                <div class="faculty-property cf4">
+                    <p>name:cd facuty 4</p>
+                    <p>subjects:</p>
+                    <hr>
+                    <h2>educational background:</h2>
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur
+                        adipisicing elit. Possimus sit quos alias
+                        facilis voluptatibus consectetur autem
+                        odit adipisci quo rerum soluta odio,
+                        sequi aliquam excepturi vitae rem
+                        voluptates, mollitia accusantium!
+                    </p>
+                    <h2>publications:</h2>
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur
+                        adipisicing elit. Deserunt adipisci porro
+                        perferendis voluptatum reprehenderit ipsum
+                        quis placeat quo iure ipsa similique
+                        doloremque eos inventore atque, optio ea
+                        molestias, dolore explicabo.
+                    </p>
+                    <h2>other info:</h2>
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur
+                        adipisicing elit. In officia, quasi
+                        voluptatum molestiae itaque odit veniam
+                        laborum unde eos nesciunt distinctio
+                        consectetur laudantium quibusdam saepe
+                        quis veritatis nobis, explicabo incidunt?
+                    </p>
+                </div>
+
+                <div class="faculty-property cf5">
+                    <p>name:cd facuty 5</p>
+                    <p>subjects:</p>
+                    <hr>
+                    <h2>educational background:</h2>
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur
+                        adipisicing elit. Possimus sit quos alias
+                        facilis voluptatibus consectetur autem
+                        odit adipisci quo rerum soluta odio,
+                        sequi aliquam excepturi vitae rem
+                        voluptates, mollitia accusantium!
+                    </p>
+                    <h2>publications:</h2>
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur
+                        adipisicing elit. Deserunt adipisci porro
+                        perferendis voluptatum reprehenderit ipsum
+                        quis placeat quo iure ipsa similique
+                        doloremque eos inventore atque, optio ea
+                        molestias, dolore explicabo.
+                    </p>
+                    <h2>other info:</h2>
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur
+                        adipisicing elit. In officia, quasi
+                        voluptatum molestiae itaque odit veniam
+                        laborum unde eos nesciunt distinctio
+                        consectetur laudantium quibusdam saepe
+                        quis veritatis nobis, explicabo incidunt?
+                    </p>
+                </div>
+
+                <div class="faculty-property etc1">
+                    <p>name:etc facuty 1</p>
+                    <p>subjects:</p>
+                    <hr>
+                    <h2>educational background:</h2>
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur
+                        adipisicing elit. Possimus sit quos alias
+                        facilis voluptatibus consectetur autem
+                        odit adipisci quo rerum soluta odio,
+                        sequi aliquam excepturi vitae rem
+                        voluptates, mollitia accusantium!
+                    </p>
+                    <h2>publications:</h2>
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur
+                        adipisicing elit. Deserunt adipisci porro
+                        perferendis voluptatum reprehenderit ipsum
+                        quis placeat quo iure ipsa similique
+                        doloremque eos inventore atque, optio ea
+                        molestias, dolore explicabo.
+                    </p>
+                    <h2>other info:</h2>
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur
+                        adipisicing elit. In officia, quasi
+                        voluptatum molestiae itaque odit veniam
+                        laborum unde eos nesciunt distinctio
+                        consectetur laudantium quibusdam saepe
+                        quis veritatis nobis, explicabo incidunt?
+                    </p>
+                </div>
+
+                <div class="faculty-property etc2">
+                    <p>name:etc facuty 2</p>
+                    <p>subjects:</p>
+                    <hr>
+                    <h2>educational background:</h2>
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur
+                        adipisicing elit. Possimus sit quos alias
+                        facilis voluptatibus consectetur autem
+                        odit adipisci quo rerum soluta odio,
+                        sequi aliquam excepturi vitae rem
+                        voluptates, mollitia accusantium!
+                    </p>
+                    <h2>publications:</h2>
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur
+                        adipisicing elit. Deserunt adipisci porro
+                        perferendis voluptatum reprehenderit ipsum
+                        quis placeat quo iure ipsa similique
+                        doloremque eos inventore atque, optio ea
+                        molestias, dolore explicabo.
+                    </p>
+                    <h2>other info:</h2>
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur
+                        adipisicing elit. In officia, quasi
+                        voluptatum molestiae itaque odit veniam
+                        laborum unde eos nesciunt distinctio
+                        consectetur laudantium quibusdam saepe
+                        quis veritatis nobis, explicabo incidunt?
+                    </p>
+                </div>
+
+                <div class="faculty-property etc3">
+                    <p>name:etc facuty 3</p>
+                    <p>subjects:</p>
+                    <hr>
+                    <h2>educational background:</h2>
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur
+                        adipisicing elit. Possimus sit quos alias
+                        facilis voluptatibus consectetur autem
+                        odit adipisci quo rerum soluta odio,
+                        sequi aliquam excepturi vitae rem
+                        voluptates, mollitia accusantium!
+                    </p>
+                    <h2>publications:</h2>
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur
+                        adipisicing elit. Deserunt adipisci porro
+                        perferendis voluptatum reprehenderit ipsum
+                        quis placeat quo iure ipsa similique
+                        doloremque eos inventore atque, optio ea
+                        molestias, dolore explicabo.
+                    </p>
+                    <h2>other info:</h2>
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur
+                        adipisicing elit. In officia, quasi
+                        voluptatum molestiae itaque odit veniam
+                        laborum unde eos nesciunt distinctio
+                        consectetur laudantium quibusdam saepe
+                        quis veritatis nobis, explicabo incidunt?
+                    </p>
+                </div>
+
+                <div class="faculty-property etc4">
+                    <p>name:etc facuty 4</p>
+                    <p>subjects:</p>
+                    <hr>
+                    <h2>educational background:</h2>
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur
+                        adipisicing elit. Possimus sit quos alias
+                        facilis voluptatibus consectetur autem
+                        odit adipisci quo rerum soluta odio,
+                        sequi aliquam excepturi vitae rem
+                        voluptates, mollitia accusantium!
+                    </p>
+                    <h2>publications:</h2>
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur
+                        adipisicing elit. Deserunt adipisci porro
+                        perferendis voluptatum reprehenderit ipsum
+                        quis placeat quo iure ipsa similique
+                        doloremque eos inventore atque, optio ea
+                        molestias, dolore explicabo.
+                    </p>
+                    <h2>other info:</h2>
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur
+                        adipisicing elit. In officia, quasi
+                        voluptatum molestiae itaque odit veniam
+                        laborum unde eos nesciunt distinctio
+                        consectetur laudantium quibusdam saepe
+                        quis veritatis nobis, explicabo incidunt?
+                    </p>
+                </div>
+
+                <div class="faculty-property etc5">
+                    <p>name:etc facuty 5</p>
+                    <p>subjects:</p>
+                    <hr>
+                    <h2>educational background:</h2>
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur
+                        adipisicing elit. Possimus sit quos alias
+                        facilis voluptatibus consectetur autem
+                        odit adipisci quo rerum soluta odio,
+                        sequi aliquam excepturi vitae rem
+                        voluptates, mollitia accusantium!
+                    </p>
+                    <h2>publications:</h2>
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur
+                        adipisicing elit. Deserunt adipisci porro
+                        perferendis voluptatum reprehenderit ipsum
+                        quis placeat quo iure ipsa similique
+                        doloremque eos inventore atque, optio ea
+                        molestias, dolore explicabo.
+                    </p>
+                    <h2>other info:</h2>
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur
+                        adipisicing elit. In officia, quasi
+                        voluptatum molestiae itaque odit veniam
+                        laborum unde eos nesciunt distinctio
+                        consectetur laudantium quibusdam saepe
+                        quis veritatis nobis, explicabo incidunt?
+                    </p>
+                </div>
+
+                <div class="faculty-property it1">
+                    <p>name:cd facuty 1</p>
+                    <p>subjects:</p>
+                    <hr>
+                    <h2>educational background:</h2>
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur
+                        adipisicing elit. Possimus sit quos alias
+                        facilis voluptatibus consectetur autem
+                        odit adipisci quo rerum soluta odio,
+                        sequi aliquam excepturi vitae rem
+                        voluptates, mollitia accusantium!
+                    </p>
+                    <h2>publications:</h2>
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur
+                        adipisicing elit. Deserunt adipisci porro
+                        perferendis voluptatum reprehenderit ipsum
+                        quis placeat quo iure ipsa similique
+                        doloremque eos inventore atque, optio ea
+                        molestias, dolore explicabo.
+                    </p>
+                    <h2>other info:</h2>
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur
+                        adipisicing elit. In officia, quasi
+                        voluptatum molestiae itaque odit veniam
+                        laborum unde eos nesciunt distinctio
+                        consectetur laudantium quibusdam saepe
+                        quis veritatis nobis, explicabo incidunt?
+                    </p>
+                </div>
+
+                <div class="faculty-property it2">
+                    <p>name:cd facuty 2</p>
+                    <p>subjects:</p>
+                    <hr>
+                    <h2>educational background:</h2>
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur
+                        adipisicing elit. Possimus sit quos alias
+                        facilis voluptatibus consectetur autem
+                        odit adipisci quo rerum soluta odio,
+                        sequi aliquam excepturi vitae rem
+                        voluptates, mollitia accusantium!
+                    </p>
+                    <h2>publications:</h2>
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur
+                        adipisicing elit. Deserunt adipisci porro
+                        perferendis voluptatum reprehenderit ipsum
+                        quis placeat quo iure ipsa similique
+                        doloremque eos inventore atque, optio ea
+                        molestias, dolore explicabo.
+                    </p>
+                    <h2>other info:</h2>
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur
+                        adipisicing elit. In officia, quasi
+                        voluptatum molestiae itaque odit veniam
+                        laborum unde eos nesciunt distinctio
+                        consectetur laudantium quibusdam saepe
+                        quis veritatis nobis, explicabo incidunt?
+                    </p>
+                </div>
+
+                <div class="faculty-property it3">
+                    <p>name:cd facuty 3</p>
+                    <p>subjects:</p>
+                    <hr>
+                    <h2>educational background:</h2>
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur
+                        adipisicing elit. Possimus sit quos alias
+                        facilis voluptatibus consectetur autem
+                        odit adipisci quo rerum soluta odio,
+                        sequi aliquam excepturi vitae rem
+                        voluptates, mollitia accusantium!
+                    </p>
+                    <h2>publications:</h2>
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur
+                        adipisicing elit. Deserunt adipisci porro
+                        perferendis voluptatum reprehenderit ipsum
+                        quis placeat quo iure ipsa similique
+                        doloremque eos inventore atque, optio ea
+                        molestias, dolore explicabo.
+                    </p>
+                    <h2>other info:</h2>
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur
+                        adipisicing elit. In officia, quasi
+                        voluptatum molestiae itaque odit veniam
+                        laborum unde eos nesciunt distinctio
+                        consectetur laudantium quibusdam saepe
+                        quis veritatis nobis, explicabo incidunt?
+                    </p>
+                </div>
+
+                <div class="faculty-property it4">
+                    <p>name:cd facuty 4</p>
+                    <p>subjects:</p>
+                    <hr>
+                    <h2>educational background:</h2>
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur
+                        adipisicing elit. Possimus sit quos alias
+                        facilis voluptatibus consectetur autem
+                        odit adipisci quo rerum soluta odio,
+                        sequi aliquam excepturi vitae rem
+                        voluptates, mollitia accusantium!
+                    </p>
+                    <h2>publications:</h2>
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur
+                        adipisicing elit. Deserunt adipisci porro
+                        perferendis voluptatum reprehenderit ipsum
+                        quis placeat quo iure ipsa similique
+                        doloremque eos inventore atque, optio ea
+                        molestias, dolore explicabo.
+                    </p>
+                    <h2>other info:</h2>
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur
+                        adipisicing elit. In officia, quasi
+                        voluptatum molestiae itaque odit veniam
+                        laborum unde eos nesciunt distinctio
+                        consectetur laudantium quibusdam saepe
+                        quis veritatis nobis, explicabo incidunt?
+                    </p>
+                </div>
+
+                <div class="faculty-property it5">
+                    <p>name:cd facuty 5</p>
+                    <p>subjects:</p>
+                    <hr>
+                    <h2>educational background:</h2>
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur
+                        adipisicing elit. Possimus sit quos alias
+                        facilis voluptatibus consectetur autem
+                        odit adipisci quo rerum soluta odio,
+                        sequi aliquam excepturi vitae rem
+                        voluptates, mollitia accusantium!
+                    </p>
+                    <h2>publications:</h2>
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur
+                        adipisicing elit. Deserunt adipisci porro
+                        perferendis voluptatum reprehenderit ipsum
+                        quis placeat quo iure ipsa similique
+                        doloremque eos inventore atque, optio ea
+                        molestias, dolore explicabo.
+                    </p>
+                    <h2>other info:</h2>
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur
+                        adipisicing elit. In officia, quasi
+                        voluptatum molestiae itaque odit veniam
+                        laborum unde eos nesciunt distinctio
+                        consectetur laudantium quibusdam saepe
+                        quis veritatis nobis, explicabo incidunt?
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <div class="syllabus">
+            <div class="sy-tabs">
+                <button class="ce">computer engineering</button>
+                <button class="etce">ETC engineering</button>
+                <button class="ite">IT engineering</button>
+                <button class="me">mechanical engineering</button>
+                <button class="enee">ENE engineering</button>
+                <button class="cee">civil engineering</button>
+                <button class="mie">mining engineering</button>
+            </div>
+
+            <div class="close">
+                <p>X</p>
+            </div>
+
+            <div class="portion comp">
+                <a href="#">semester 1</a>
+                <a href="#">semester 2</a>
+                <a href="#">semester 3</a>
+                <a href="#">semester 4</a>
+                <a href="#">semester 5</a>
+                <a href="#">semester 6</a>
+                <a href="#">semester 7</a>
+                <a href="#">semester 8</a>
+            </div>
+
+            <div class="portion telecom">
+                <a href="#">semester 1</a>
+                <a href="#">semester 2</a>
+                <a href="#">semester 3</a>
+                <a href="#">semester 4</a>
+                <a href="#">semester 5</a>
+                <a href="#">semester 6</a>
+                <a href="#">semester 7</a>
+                <a href="#">semester 8</a>
+            </div>
+
+            <div class="portion infor">
+                <a href="#">semester 1</a>
+                <a href="#">semester 2</a>
+                <a href="#">semester 3</a>
+                <a href="#">semester 4</a>
+                <a href="#">semester 5</a>
+                <a href="#">semester 6</a>
+                <a href="#">semester 7</a>
+                <a href="#">semester 8</a>
+            </div>
+
+            <div class="portion mech">
+                <a href="#">semester 1</a>
+                <a href="#">semester 2</a>
+                <a href="#">semester 3</a>
+                <a href="#">semester 4</a>
+                <a href="#">semester 5</a>
+                <a href="#">semester 6</a>
+                <a href="#">semester 7</a>
+                <a href="#">semester 8</a>
+            </div>
+
+            <div class="portion electrical">
+                <a href="#">semester 1</a>
+                <a href="#">semester 2</a>
+                <a href="#">semester 3</a>
+                <a href="#">semester 4</a>
+                <a href="#">semester 5</a>
+                <a href="#">semester 6</a>
+                <a href="#">semester 7</a>
+                <a href="#">semester 8</a>
+            </div>
+
+            <div class="portion civil">
+                <a href="#">semester 1</a>
+                <a href="#">semester 2</a>
+                <a href="#">semester 3</a>
+                <a href="#">semester 4</a>
+                <a href="#">semester 5</a>
+                <a href="#">semester 6</a>
+                <a href="#">semester 7</a>
+                <a href="#">semester 8</a>
+            </div>
+
+            <div class="portion mining">
+                <a href="#">semester 1</a>
+                <a href="#">semester 2</a>
+                <a href="#">semester 3</a>
+                <a href="#">semester 4</a>
+                <a href="#">semester 5</a>
+                <a href="#">semester 6</a>
+                <a href="#">semester 7</a>
+                <a href="#">semester 8</a>
+            </div>
+        </div>
+
+        <div class="students">
+            <div class="help">
+                <button>online registration</button>
+                <button>online fee payment</button>
+                <button>apply onlinecertificate</button>
+                <button>results</button>
+                <button>pre-question papers</button>
+                <button>annual events</button>
+            </div>
+        </div>
+
+        <div class="about">
+
+        </div>
+    </div>
+</body>
+
+</html>
